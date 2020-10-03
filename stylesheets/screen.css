@@ -1,0 +1,274 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, G:/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*-- This is phone rule --*/
+/* line 44, ../sass/_phone-default.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 47, ../sass/_phone-default.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 50, ../sass/_phone-default.scss */
+strong {
+  font-weight: 800;
+}
+
+/*-- Body ---*/
+/* line 55, ../sass/_phone-default.scss */
+body {
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+  z-index: 99;
+}
+
+/*-- container---*/
+/* line 67, ../sass/_phone-default.scss */
+#container {
+  min-width: 320px;
+  max-width: 960px;
+  border: 4px solid #FDC344;
+  border-bottom: 0;
+}
+
+/*-- Header ---*/
+/* line 76, ../sass/_phone-default.scss */
+header {
+  background-color: #FDC344;
+  position: relative;
+}
+
+/* line 80, ../sass/_phone-default.scss */
+header div.logo {
+  display: block;
+}
+
+/* line 83, ../sass/_phone-default.scss */
+header div.logo img {
+  float: left;
+  margin: 1em 2% 0 2%;
+}
+
+/* line 88, ../sass/_phone-default.scss */
+header div.logo h1 {
+  font-size: 2em;
+  padding: 1.4em 0 0 2%;
+  font-weight: 800;
+}
+
+/*----- Top  Nav -----*/
+/* line 95, ../sass/_phone-default.scss */
+div.topNav {
+  margin: 0 2%;
+  float: right;
+}
+
+/* line 100, ../sass/_phone-default.scss */
+div.topNav ul {
+  padding-top: 0.4em;
+  padding-bottom: 1.2em;
+  float: right;
+}
+
+/* line 106, ../sass/_phone-default.scss */
+div.topNav ul li {
+  float: left;
+}
+
+/* line 109, ../sass/_phone-default.scss */
+div.topNav ul li a {
+  font-size: 0.73em;
+  padding-left: 0.8em;
+  color: #49515E;
+  text-shadow: #fde231;
+  font-weight: 800;
+}
+
+/*-----  Form  -----*/
+/* line 117, ../sass/_phone-default.scss */
+form.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  float: left;
+  clear: both;
+}
+
+/* line 124, ../sass/_phone-default.scss */
+form.search input[type="text"] {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/* line 130, ../sass/_phone-default.scss */
+form.search input[type="text"]:focus {
+  border: 1px solid #5BC0DE;
+}
+
+/* line 133, ../sass/_phone-default.scss */
+button.btnSearch {
+  border: none;
+  outline: none;
+  background-color: #C8102E;
+  cursor: pointer;
+}
+
+/* line 140, ../sass/_phone-default.scss */
+button.btnSearch svg {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+/*-----Navigation -----*/
+/* line 147, ../sass/_phone-default.scss */
+nav {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: #EFEFEF;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* line 156, ../sass/_phone-default.scss */
+nav ul.parent_nav {
+  padding: 0.4em 0em;
+}
+
+/* line 159, ../sass/_phone-default.scss */
+nav ul.parent_nav li {
+  float: left;
+}
+
+/* line 162, ../sass/_phone-default.scss */
+nav ul.parent_nav li a {
+  font-size: 0.85em;
+  color: #850205;
+  padding: 0.4em 0.6em;
+  font-weight: 600;
+}
+
+/* line 169, ../sass/_phone-default.scss */
+nav ul.parent_nav li a:hover {
+  color: #1C1C1C;
+}
+
+/*-----  Banner  -----*/
+/* line 176, ../sass/_phone-default.scss */
+div.banner {
+  width: 96%;
+  margin: 0 2%;
+  min-height: 5em;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+/*-----  content  -----*/
+/* line 186, ../sass/_phone-default.scss */
+#content {
+  width: 100%;
+}
+
+/*----- Footer -----*/
+/* line 193, ../sass/_phone-default.scss */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 0.6em;
+  font-size: 0.85em;
+}
+
+/*----- Other stuffs -----*/
+/* line 203, ../sass/_phone-default.scss */
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+/* line 209, ../sass/_phone-default.scss */
+.keepOpen {
+  clear: both;
+}
+
+@media only screen and (min-width: 600px) {
+  /*--  This is tablet rule --*/
+}
+@media only screen and (min-width: 961px) {
+  /*--  This is desktop rule --*/
+  /*-- container---*/
+  /* line 6, ../sass/_desktop.scss */
+  #container {
+    margin: 0 auto;
+  }
+}

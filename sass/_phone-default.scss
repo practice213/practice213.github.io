@@ -1,0 +1,213 @@
+ /*-- This is phone rule --*/
+
+$font: 'Montserrat', sans-serif;
+$main-color: #FDC344;
+$dark-black: #1C1C1C;
+$text:#151515;
+$lightWhite: #EFEFEF;
+$rgb: rgba(255,255,255, 0.8);
+$line:rgba(17, 17, 17, 0.1);
+$yellowbtn:#fde231;
+$nav-color:#565A5D;
+$gray: #C3C7C8;
+$red:#C8102E;
+$dark-red:#850205;
+$light: 500;
+$medium: 600;
+$heavy: 800;
+$elbowRoom: 2%; 
+
+
+// transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+@mixin  gradient($start , $end) {
+ 
+    background: $start; /* Old browsers */
+    background: -moz-linear-gradient(top, $start 1%, $end  100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $start 1%, $end  100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $start 1%, $end   100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        
+    }
+    
+    @mixin transition($effect) {
+        -webkit-transition: $effect 0.5s ease;
+        -moz-transition: $effect 0.5s ease;
+        -o-transition: $effect 0.5s ease;
+        transition: $effect 0.5s ease;
+    }
+    
+    @mixin border-radius($radius) {
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        border-radius: $radius;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style-type:  none;
+    }
+    strong{
+        font-weight: $heavy;
+    }
+      
+  /*-- Body ---*/   
+body{
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: $font;
+    font-weight: $light;
+    overflow: hidden;
+
+    z-index: 99;
+}
+
+  /*-- container---*/   
+
+#container {
+ min-width: 320px;
+ max-width: 960px;
+ border:4px solid $main-color;
+ border-bottom:0;
+}
+
+  /*-- Header ---*/   
+
+  header {
+      background-color: $main-color;
+      position: relative;
+  }
+  header div.logo{
+      display:block;
+  }
+  header div.logo img {
+    float: left;
+    margin: 1em $elbowRoom 0 $elbowRoom;
+ 
+  }
+  header div.logo  h1 {
+    font-size: 2em;
+    padding: 1.4em 0 0  $elbowRoom;
+    font-weight: $heavy;
+  }
+
+/*----- Top  Nav -----*/
+div.topNav {
+    margin:0 $elbowRoom;
+    float:right;
+   
+}
+div.topNav ul{
+ padding-top:0.4em;
+ padding-bottom:1.2em;
+ float: right;
+
+}
+div.topNav ul li{
+    float: left;
+}
+div.topNav ul li a{ 
+    font-size:0.73em;
+    padding-left:0.8em;
+    color: #49515E;
+    text-shadow: $yellowbtn;
+    font-weight: $heavy;
+}
+/*-----  Form  -----*/
+form.search {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    float:left;
+    clear: both;
+}
+form.search input[type="text"]{
+ 
+ border-top-left-radius: 3px;
+ border-bottom-left-radius: 3px;
+   
+}
+form.search input[type="text"]:focus {
+    border: 1px solid #5BC0DE;;
+}
+button.btnSearch {
+    border:none;
+    outline:none;
+    background-color: $red;
+    cursor: pointer;
+}
+
+button.btnSearch svg{
+    fill: $rgb;
+}
+
+
+/*-----Navigation -----*/
+ 
+nav{
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   background-color: $lightWhite;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+
+nav ul.parent_nav {
+    padding:0.4em 0em;
+}
+nav ul.parent_nav li{
+ float:left;
+}
+nav ul.parent_nav li a{
+  font-size:0.85em;
+  color: $dark-red;
+  padding:0.4em 0.6em;
+  font-weight: $medium;
+}
+
+nav ul.parent_nav li a:hover{
+  color: $dark-black;
+}
+
+
+/*-----  Banner  -----*/
+
+div.banner{
+    width:96%;
+    margin:0 $elbowRoom;
+    min-height: 5em;
+    border-bottom: 1px solid $line;
+}
+
+
+
+/*-----  content  -----*/
+#content{
+    width:100%;
+}
+
+
+
+/*----- Footer -----*/
+footer{
+    clear: both;
+    text-align: center;
+    padding:0.6em;
+    font-size: 0.85em;
+}
+
+
+
+/*----- Other stuffs -----*/
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.keepOpen {
+    clear: both;
+}
+
+
